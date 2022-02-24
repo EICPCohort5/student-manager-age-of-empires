@@ -7,7 +7,6 @@ function handleFormSubmit(event){
 
   let studentData = new FormData(form);
   iteratewithentriesDestruct(studentData);
-
 }
 
 
