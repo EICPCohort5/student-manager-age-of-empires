@@ -1,3 +1,4 @@
+<!--students have, at a minimum, a firstName, lastName, and location (US, UK, Canada), modeling the students in the bootcamp--> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,10 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/bootstrap.css">
-  <title>Document Template</title>
+  <title>Student Manager App</title>
 </head>
 <body>
-  <main class="container"></main>
+  <main class="container">
+    <header>
+      <h1>Student</h1>
+    </header>
+    <section>
+      <form id="student-app">
+        <div>
+          <label for = "firstname" class="form-label">First Name</label>
+          <input type ="text" name ="firstname" id="firstname" class ="form-control">
+        </div>
+        <div>
+          <label for = "lastname" class="form-label">Last Name</label>
+          <input type ="text" name ="lastname" id="lastname" class ="form-control">
+        </div>
+        <div>
+          <label for = "location" class="form-label">Location</label>
+          <select name="location" id="location" class="form-select">
+            <option value = "US">United States</option>
+            <option value = "CA">Canada</option>
+            <option value = "UK">Europe</option>
+          </select>
+        </div>
+        <div class = "mt-2"><button class="btn btn-warning" type="submit">Save Selection</button></div>
+      </form>
+    </section>
+  </main>
   <script src="main.js" type="module"></script>
 </body>
 </html>
