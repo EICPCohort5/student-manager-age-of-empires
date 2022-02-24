@@ -15,4 +15,4 @@ Testing?
 
 ## Team List
 
-Peter, Daniel, Alex, Phillip
+Peter, Charlie, Daniel, Alex, Phillip
