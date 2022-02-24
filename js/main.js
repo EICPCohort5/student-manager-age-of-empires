@@ -11,13 +11,22 @@ function handleFormSubmit(event){
 
 
 function iteratewithentriesDestruct(studentData){
-  for (let [key,value] of studentData.entries()){
-    console.log(`${key}: ${value}`);
+  //access table
+  let table = document.querySelector('#myTable');
+  //access row on table
+  let row = table.insertRow();
+  // we dont use the <key> in our loop, so leave blank BUT use a , to indicate we are still looping through [key,value] pairs
+  for (let [,value] of studentData.entries()){
+    //create new html element cell
+    let td = document.createElement('td');
+    // create text node of studentdata value
+    let text = document.createTextNode(value);
+    //add value to cell
+    td.appendChild(text);
+    // add cell to row
+    row.appendChild(td);
   }
+
 }
-
-
-
-
 
 //export {};
